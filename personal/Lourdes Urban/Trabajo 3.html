@@ -67,16 +67,35 @@
 
     </section>
 
-    <section>
+   <section>
      <!-- Aqui va mi contacto -->
       <h2>CONTACTO</h2>
       <hr>
       <form action="" method="">
         <!-- action es " a donde meter mis datos"; method es "como se va a enviar tius datos" -->
-        Nombre: <input type="text" minlength="5" maxlength="20" placeholder="Solo nombre" required>
-        Apellido paterno: <input type="text" maxlength="20"> <br><br>
+        Nombre: <input type="text" minlength="5" maxlength="20" placeholder="Solo nombre" required name="nombre" value="">
+        Apellido paterno: <input type="text" maxlength="20"> <br> <br>
+        Edad: <input type="number" maxlength="90" minlength="18" value="0" name="edad"> <br><br>
+        E-mail: <input type="email"> <br> <br>
+        Telefono: <input type="tel" name="telefono" minlength="10" maxlength="10" placeholder="10 digitos"> <br><br>
+        Sexo: <input type="radio" value="hombre" name="sexo"> Hombre
+        <input type="radio" value="mujer" name="sexo">Mujer
+        <input type="radio" value="otro" name="sexo"> Otro <br><br>
+        <input type="checkbox" name="información" value="si"> Deseo recibir información <br><br>
+        <input type="checkbox" name="cambios" value="cambios"> Solo cambios en el sitio <br><br>
+        <input type="checkbox" name="aveces" value="aveces"> Solo de tecnologia <br><br>
+        De que tema deseas recibir información <select name="noticias" >
+            <option value="ninguno"> SELECCIONA</option>
+            <option value="diseño"> DISEÑO WEB</option>
+            <option value="base"> BASE DE DATOS</option>
+            <option value="programación">PROGRAMACIÓN</option>
+        </select> <br><br>
+        ¿Necesitas asesoria? ¡Sube tu archivo! <br>
+        <input type="file" name="archivo" > <br><br>
+        Ingresa la contraseña de tu documento <input type="password" name="contraseña"> <br><br>
+        Fecha e que deseas ser contactade <input type="date" name="fecha"> <br><br>
 
-        <input type="submit" value="Contactame 😎">
+        <input type="submit" value="Contactame 📞">
         <input type="reset" value="Reestablecer 😅">
 
       </form>
@@ -86,7 +105,11 @@
 
    <footer>
         <!-- Aqui pondre redes sociales y formas de contacto -->
-
+    <h4>Contacto: </h4>
+    <p>Telefono:55555555555</p>
+    <p>Correo: lourdesramos@gmail.com </p>
+     <a href="https://www.facebook.com/" target="_blank">   <img src="https://th.bing.com/th/id/R.8b4e0813e813feab6c598f77887b1485?rik=G2l5mCAvaYfBmw&riu=http%3a%2f%2fwww.dayzcolony.com%2fwp-content%2fuploads%2f2017%2f10%2fFacebook-Circle-Icon.png&ehk=4QVaOzH7aUagUjzLAayVs1NUmFN%2bySZGWRnVZWo%2bDAU%3d&risl=&pid=ImgRaw&r=0" width="3%"> Lourdes Urban </a>
+     <!-- target es para que se abra el link en una pagina limpia -->
    </footer>
 </body>
 </html>
